@@ -26,7 +26,7 @@ const AuthShowcase: React.FC = () => {
                 </li>
                 <li className="text-white font-semibold pl-14">
                     <Link href={"/profile"}>
-                        <p className="rounded-2xl p-2 w-20 text-center text-lg hover:bg-gray-800">Profile</p>
+                        <p className="rounded-2xl p-2 w-20 text-center text-xl hover:bg-gray-800">Profile</p>
                     </Link>
                 </li>
                 <li>
