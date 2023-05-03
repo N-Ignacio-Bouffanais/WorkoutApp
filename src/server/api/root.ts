@@ -1,5 +1,5 @@
 import { createTRPCRouter } from "~/server/api/trpc";
-import { routineRouter } from "~/server/api/routers/routine";
+import { exerciseRouter } from "./routers/exercise";
 
 /**
  * This is the primary router for your server.
@@ -7,7 +7,7 @@ import { routineRouter } from "~/server/api/routers/routine";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-  routine: routineRouter,
+  exercise: exerciseRouter,
 });
 
 // export type definition of API

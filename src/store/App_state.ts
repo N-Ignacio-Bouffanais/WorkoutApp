@@ -18,6 +18,7 @@ type Actions = {
   setSets: (sets: number) => void;
   setWeight: (weight: number) => void;
   setReps: (reps: number) => void;
+  reset: () => void
 };
 
 const initialState: State = {
@@ -39,4 +40,7 @@ export const useAppStore = create<State & Actions>()((set) => ({
   setSets: (sets) => set(() => ({ sets })),
   setWeight: (weight) => set(() => ({ weight })),
   setReps: (reps) => set(() => ({ reps })),
+  reset: () => {
+    set(initialState);
+  },
 }));
